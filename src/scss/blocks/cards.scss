@@ -1,0 +1,47 @@
+.advantages__container {
+    width: 940px;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.advantages-item {
+    // background-image: url(/img/iphone-first.png);
+    margin: 0;
+    text-align: center;
+    width: 292px;
+    // padding-top: 362px;
+    background-repeat: no-repeat;
+    background-position: -20px 45px;
+    margin-top: 40px;
+}
+
+.advantages-item__name {
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 27px;
+    margin-top: 35px;
+    color: #000;
+    font-weight: 700;
+
+}
+
+.advantages-item__info {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400px;
+    margin: 0 auto;
+    width: 244px;
+}
+
+.img-iphone {
+    
+    height: 302px;
+}
+
+.advantages__field {
+    background-color: #f2f2f2;
+}
