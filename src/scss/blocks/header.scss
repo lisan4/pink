@@ -1,0 +1,592 @@
+body {
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    background-color: #fff;
+    font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.main-nav--opened {
+    display: block;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.page-header__toggle {
+    display: none;
+}
+
+.logo {
+    &--tablet {
+        display: none;
+    }
+    &--mobile {
+        display: none;
+    }
+}
+
+.background-main {
+    background-image: url(/img/a02bb1e094ca09629f65.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    min-height: 853px;
+   
+}
+
+.background-nav {
+    background: rgba(0, 0, 0, 0.5);
+    height: 110px;
+}
+
+.nav {
+    max-height: 110px;
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav-logo_link {
+    display: block;
+    height: 110px;
+} 
+
+.nav-item__active a {
+    position: relative;
+}
+
+.nav-item__active a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 36px;
+    left: 0;
+    background-color: #d22856;
+}
+
+
+.logo--desktop {
+    display: block;
+    padding-top: 27px;
+    padding-left: 10px;
+    width: 147px;
+    height: 40px;
+    fill: #fff;
+    &:hover {
+        fill: $pink;
+        cursor: pointer;
+    }
+    &:active {
+        fill: $grey;
+        cursor: pointer;
+    }
+}
+
+.logo-wrapper {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list {
+    width: 620px;
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+    list-style: none;
+    
+
+}
+
+.nav-item {
+    width: 155px;
+    height: 90px;
+    text-decoration: none;
+    padding-top: 47px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.nav-list a {
+    color: #fff;
+    font-weight: 400;
+    &:hover {
+        color: $pink;
+    }
+    &:active {
+        color: $grey;
+    }
+}
+
+.background-download {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.wrapper-margin {
+    width: 940px;
+    margin: 0 auto;
+    background-image: url(/img/background-iphone.png);
+    background-position: 18px 98px;
+    background-size: 1050px 645px;
+    background-repeat: no-repeat;
+}
+
+.live {
+    color: #ffffff;
+    width: 252px;
+    font-size: 50px;
+    line-height: 55px;
+    padding-top: 115px;
+    padding-left: 30px;
+    margin-bottom: 67px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.download__btn {
+    border: #fff solid 3px;
+    border-radius: 30px;
+    font-size: 21px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Open Sans", "Arial", sans-serif;
+    padding-top: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 8px;
+    &:hover {
+        background-color: #fff;
+        color: $pink;
+    }
+
+    &:active {
+        color: $pink-active;
+    }
+    
+}
+
+.button-download--wrapper {
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 10px;
+    margin-bottom: 84px;
+
+}
+
+.download-item {
+    list-style: none;
+}
+
+.download-list {
+    display: flex;
+    gap: 83px;
+    margin: 0;
+    padding: 0;
+    margin-left: 47px;
+    margin-bottom: 53px;
+    width: 250px;
+    height: 56px;
+    position: relative;
+}
+
+
+
+.download__link--itunes::before {
+    content: '';
+    position: absolute;
+    width: 47px;
+    height: 56px;
+    background-image: url(/img/apple-logo.svg.png);
+    background-repeat: no-repeat;
+}
+
+.download__link--android {
+    content: '';
+    position: absolute;
+    width: 47px;
+    height: 56px;
+    background-image: url(/img/android-logo.svg.png);
+    background-repeat: no-repeat;
+    bottom: -8px;
+}
+
+.download__link--microsoft {
+    content: '';
+    position: absolute;
+    width: 47px;
+    height: 56px;
+    background-image: url(/img/microsoft-logo.svg.png);
+    background-repeat: no-repeat;
+    bottom: -14px;
+}
+
+.download__info {
+    font-size: 18px;
+    color: $text-grey;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-right: 640px;
+    padding-bottom: 121px;
+}
+
+@media (max-width: $desktop-width) {
+    .logo {
+        &--tablet {
+            display: block;
+        }
+        &--mobile {
+            display: none;
+        }
+        &--desktop {
+            display: none;
+        }
+    }
+
+    .background-main {
+        background-image: url(/img/bgTablet.jpg);
+    }
+
+    .page-header__toggle {
+        display: block;
+    }
+
+    .logo--tablet {
+        fill: white;
+        display: block;
+        padding-top: 27px;
+        padding-left: 10px;
+        width: 147px;
+        height: 40px;
+        fill: #fff;
+        &:hover {
+            fill: $pink;
+            cursor: pointer;
+        }
+        &:active {
+            fill: $grey;
+            cursor: pointer;
+        }
+        
+    }
+
+    .logo-wrapper {
+        display: block;
+        width: 640px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav {
+        display: block;
+        width: 100%
+        
+    }
+
+
+    .nav-logo_link {
+        position: relative;
+    }
+
+    .page-header__toggle {
+        font: inherit;
+        border: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 90px;
+        min-height: 66px;
+        cursor: pointer;
+        background-color: transparent;
+        top: 20px;
+        
+    }
+
+    .main-nav--closed .page-header__toggle::before {
+        content: "";
+        position: absolute;
+        top: 21px;
+        left: 20px;
+        width: 50px;
+        height: 4px;
+        background-color: #fff;
+        box-shadow: 0 10px 0 0 #fff, 0 20px 0 0 #fff;
+        
+    }
+
+    .main-nav--closed .page-header__toggle:hover::before {
+        background-color: $pink;
+        box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
+    }
+    .main-nav--closed .page-header__toggle:active::before {
+        opacity: 0.6;
+    }
+
+    .nav-list--opened .nav-list {
+        display: block;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        background-color: $bgGrey;
+    }
+
+    .nav-item {
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 700;
+        height: 64px;
+        text-align: center;
+        padding-top: 16px;
+        box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.15) inset;
+        border-top: 1px solid #000;
+        margin-bottom: 1px;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+    .background-nav .nav-list--opened {
+        background-color: #283645;
+        
+    }
+
+    .nav-list--opened .page-header__toggle {
+        &::after {
+            content: " ";
+            position: absolute;
+            width: 30px;
+            height: 5px;
+            background-color: #fff;
+            top: 30px;
+            left: 47px;
+            transform: rotate(-45deg); 
+        };
+        &::before {
+            content: " ";
+            position: absolute;
+            width: 30px;
+            height: 5px;
+            background-color: #fff;
+            top: 30px;
+            left: 47px;
+            transform: rotate(45deg); 
+        };
+    }
+
+    .nav-list--opened .page-header__toggle:hover {
+        &::before {
+            background-color: $pink;
+        }
+        &::after {
+            background-color: $pink;
+        }
+    }
+
+    .nav-list--opened .page-header__toggle:active {
+        &::before {
+            opacity: 0.6;
+        }
+        &::after {
+            opacity: 0.6;
+        }
+    }
+
+    .wrapper-margin {
+        width: 640px;
+    }
+
+    .live {
+        display: block;
+        width: 193px;
+        color: #fff;
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 45px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        padding-top: 102px;
+        padding-left: 54px;
+        margin-bottom: 35px;
+    }
+
+    .button-download--wrapper {
+        width: 640px;
+
+    }
+
+    .download__btn {
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        margin: 0;
+        font-size: 18px;
+        
+    }
+
+    .background-download {
+        width: 620px;
+        margin: 0;
+    }
+
+    .button-download--wrapper {
+        margin-bottom: 53px;
+    }
+
+    .wrapper-margin {
+        width: 620px;
+        margin: 0 auto;
+        background-image: url(/img/iphone.bg.tablet.png);
+        background-repeat: no-repeat;
+        background-position: -38px 75px;
+        background-size: 700px 545px;
+    }
+
+    .download__info {
+        width: 300px;
+        height: 50px;
+    }
+
+    .nav-item__active a::before {
+        display: none;
+    }
+
+    .nav-item__active a{
+        color: $pink;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .logo {
+        &--tablet {
+            display: none;
+        }
+        &--mobile {
+            display: block;
+        }
+        &--desktop {
+            display: none;
+        }
+    }
+
+    .background-nav {
+        height: 66px;
+    }
+
+    .nav-logo_link {
+        height: 66px;
+    }
+
+    .logo-wrapper {
+        width: 320px;
+        
+    }
+
+    .logo--mobile {
+        margin-left: 20px;
+        padding-top: 21px;
+        width: 75px;
+        height: 22px;
+        fill: white;
+        cursor: pointer;
+        &:hover {
+            fill: $pink;
+        }
+        &:active {
+            opacity: 0.6;
+        }
+    }
+
+    .page-header__toggle {
+        top: 0;
+    }
+
+    .background-main {
+        
+        background-image: url(/img/bg.mobile.jpg);
+       
+    }
+
+    .background-download {
+
+        width: 320px;
+        margin: 0 auto;
+        margin-top: 396px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(/img/bg.iphone.mobile.png);
+            background-repeat: no-repeat;
+            width: 257px;
+            height: 288px;
+            top: -286px;
+           
+        }
+    }
+
+    .wrapper-margin {
+        
+        background-image: none;
+        width: 100%;
+    }
+
+    .wrapper-download {
+        background-color: #1d2631;
+        width: 100%;
+    }
+
+    .live {
+        display: none;
+    }
+
+    .button-download--wrapper {
+        padding-top: 45px;
+        margin-bottom: 47px;
+        width: 320px;
+    }
+
+    .download__info {
+        width: 250px;
+        margin: 0 auto;
+        padding: 0;
+        font-size: 14px;
+        margin-bottom: 20px;
+        padding-bottom: 25px;
+    }
+
+    .download-list {
+        margin-bottom: 0px;
+        padding-bottom: 25px;
+    }
+
+    .download__link--android {
+        bottom: 17px;
+    }
+
+    .download__link--microsoft {
+        bottom: 11px;
+    }
+
+    .nav-list {
+        z-index: 100;
+    }
+}
