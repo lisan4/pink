@@ -34,9 +34,9 @@ function cards() {
         }
     }
 
-    new MenuCard('/img/iphone-first.png', "Поднимает настроение", "Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!", '.advantages__field .advantages__container').render();
-    new MenuCard('/img/iphone-second.png', "Меняет мир вокруг", "Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект", '.advantages__field .advantages__container').render();
-    new MenuCard('/img/iphone-third.png', "Заводит новых друзей", "Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых", '.advantages__field .advantages__container').render();
+    new MenuCard('img/iphone-first.png', "Поднимает настроение", "Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!", '.advantages__field .advantages__container').render();
+    new MenuCard('img/iphone-second.png', "Меняет мир вокруг", "Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект", '.advantages__field .advantages__container').render();
+    new MenuCard('img/iphone-third.png', "Заводит новых друзей", "Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых", '.advantages__field .advantages__container').render();
 
     const body = document.querySelector("body");
 
