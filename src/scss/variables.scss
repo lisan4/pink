@@ -8,6 +8,10 @@ $bgGrey: #283645;
     display: none;
 }
 
+li {
+    list-style: none;
+}
+
 $tablet-width: 660px;
 $desktop-width: 1200px;
 $mobile-width-only: 659px;

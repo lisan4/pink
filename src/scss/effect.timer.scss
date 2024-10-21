@@ -1,0 +1,121 @@
+.item-add__background {
+    background-color: #f2f2f2;
+}
+
+.specification__item-add {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    height: 480px;
+    position: relative;
+    justify-content: space-between;
+    &::after {
+        content: '';
+        position: absolute;
+        background-image: url(/img/timer.svg.png);
+        width: 316px;
+        height: 411px;
+        background-position: -2px 56px;
+        
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+    }
+}
+
+.timer {
+    font-size: 120px;
+    border-width: 17px;
+    padding-left: 40px;
+    padding-top: 57px;
+    margin-left: 22px;
+    margin-top: 127px;
+    width: 180px;
+    height: 163px;
+    line-height: 90px;
+    font-weight: 700;
+    border: 15px solid #d22856;
+    border-radius: 50%;
+    color: #d22856;
+    z-index: 1111;
+    
+}
+
+.item-add__wrapper {
+    width: 570px;
+    margin-top: 160px;
+}
+
+.specification-item__name {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+.specification-item__info {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 35px;
+}
+
+.specification-item__article {
+    text-decoration: underline;
+    color: #d22856;
+    font-size: 18px;
+}
+
+@media (max-width: $desktop-width) {
+    .item-add__background {
+        background-color: white;
+    }
+
+    .specification__item-add {
+        width: 620px;
+        height: 480px;
+        &::after {
+            content: "";
+            position: absolute;
+           
+            background-size: 238px 276px;
+            background-position: -1px 59px;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+        }
+    }
+
+    .item-add__wrapper {
+        width: 320px;
+        margin-top: 100px;
+    }
+
+    .timer {
+        color: #d22856;
+        font-size: 96px;
+        line-height: 90px;
+        margin-top: 115px;
+        margin-left: 17px;
+        padding-left: 33px;
+        padding-top: 32px;
+        width: 140px;
+        height: 140px;
+        border: 15px solid #d22856;
+        border-radius: 50%;
+    }
+
+    .specification-item__name {
+        width: 173px;
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 25px;
+    }
+
+    .specification-item__info {
+        width: 320px;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .item-add__background {
+        display: none;
+    }
+
+}

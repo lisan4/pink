@@ -1,3 +1,7 @@
+.advantages-item--first {
+    display: none;
+}
+
 .advantages__container {
     width: 940px;
     height: 600px;
@@ -44,4 +48,111 @@
 
 .advantages__field {
     background-color: #f2f2f2;
+}
+
+@media (max-width: $desktop-width) {
+    .advantages-item {
+        display: none;
+    }
+
+    .advantages-item-tablet {
+        list-style: none;
+        height: 106px;
+        width: 310px;
+        margin-bottom: 30px;
+        text-align: left;
+        line-height: 24px;
+
+       
+    }
+
+    .advantages-list {
+        height: 481px;
+        box-sizing: border-box;
+        padding-top: 73px;
+    }
+
+    .advantages__field {
+        height: 481px;
+    }
+
+    .advantages-item__info {
+        font-size: 14px;
+        margin: 0;
+        width: 320px;
+        line-height: 24px;
+    }
+
+    .advantages-item__name {
+        padding: 0;
+        margin: 0;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .advantages__container {
+        width: 620px;
+        height: 481px;
+    }
+
+    .img-iphone {
+        height: auto;
+    }
+
+    .advantages-item--first {
+        display: flex;
+        width: 620px;
+        margin: 0 auto;
+        justify-content: space-between;
+        height: 481px;
+    }
+
+    
+}
+
+@media (max-width: $tablet-width) {
+    .advantages__container {
+        width: 320px;
+        display: block;
+        height: auto;
+    }
+
+    .advantages-item--first {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        
+    }
+
+    .img-iphone {
+        width: 159px;
+        height: 277px;
+    }
+
+    .img-tablet {
+        height: 277px;
+        order: 2;
+    }
+
+    .advantages__field {
+        height: auto;
+    }
+
+    .advantages-list {
+        order: 1;
+    
+    }
+
+    .advantages-item-tablet {
+        text-align: center;
+        width: 280px;
+        margin: 0 auto;
+        margin-bottom: 28px;
+    }
+
+    .advantages-item__info {
+        width: 280px;
+    }
+
 }
