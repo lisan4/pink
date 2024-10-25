@@ -117,14 +117,17 @@
                 <br class="tablet-non">Видите, как не хватает ваших?</header>
         
               <blockquote class="user-photo__item-panorama user-photo__inner">
-                <div class="user-photo__wrapper">
-                  <span class="user-photo__panorama">Панорама дня</span>
+                <div class="user-photo__wrapper1">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg" width="300" height="400">
+                        <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg" height="509">
+                        <img class="user-photo__image--panorama" src="img/panorama-desktop@1x.jpg" alt="Панорама дня от пользователя Анна" width="280" height="180">
+                    </picture>
+                <span class="user-photo__panorama">Панорама дня</span>
                 </div>
         
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/content/panorama-desktop@1x.jpg" width="300" height="400">
-                  <source media="(min-width: 660px)" srcset="img/content/panorama-tablet@1x.jpg" height="509">
-                  <img class="user-photo__image--panorama" src="img/content/panorama-desktop@1x.jpg" alt="Панорама дня от пользователя Анна" width="280" height="180">
+                 
                 </picture>
         
         
@@ -147,9 +150,9 @@
                 <blockquote class="user-photo__item user-photo__inner">
                   <a href="#" class="user-photo__photo">
                     <picture>
-                      <source media="(min-width: 1200px)" srcset="img/content/photo-car-desktop@1x.jpg" width="300" height="400">
-                      <source media="(min-width: 660px)" srcset="img/content/photo-car-tablet@1x.jpg" width="300" height="300">
-                      <img class="user-photo__image" src="img/content/photo-car-mobile@1x.jpg" alt="Фото от пользователя Левон" width="280" height="180">
+                      <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg" width="300" height="400">
+                      <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg" width="300" height="300">
+                      <img class="user-photo__image" src="img/photo-car-mobile@1x.jpg" alt="Фото от пользователя Левон" width="280" height="180">
                     </picture>
                   </a>
                   <div class="user-photo__item-wrapper">
@@ -164,9 +167,9 @@
         
                 <blockquote class="user-photo__item user-photo__inner">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/content/photo-drumset-desktop@1x.jpg" width="300" height="400">
-                    <source media="(min-width: 660px)" srcset="img/content/photo-drumset-tablet@1x.jpg" height="509">
-                    <img class="user-photo__image" src="img/content/photo-drumset-mobile@1x.jpg" alt="Фото от пользователя Антон" width="280" height="180">
+                    <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg" width="300" height="400">
+                    <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg" width="300" height="300">
+                    <img class="user-photo__image" src="/img/photo-drumset-mobile@1x.jpg" alt="Фото от пользователя Антон" width="280" height="180">
                   </picture>
                   <div class="user-photo__item-wrapper">
                     <div class="photo__item-wrapper">
@@ -180,9 +183,9 @@
         
                 <blockquote class="user-photo__item user-photo__inner">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/content/photo-window-desktop@1x.jpg" width="300" height="400">
-                    <source media="(min-width: 660px)" srcset="img/content/photo-window-tablet@1x.jpg" height="509">
-                    <img class="user-photo__image" src="img/content/photo-window-mobile@1x.jpg" alt="Фото от пользователя Борис" width="280" height="180">
+                    <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg" width="300" height="400">
+                    <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg" width="300" height="300">
+                    <img class="user-photo__image" src="img/photo-window-mobile@1x.jpg" alt="Фото от пользователя Борис" width="280" height="180">
                   </picture>
                   <div class="user-photo__item-wrapper">
                     <div class="photo__item-wrapper">
@@ -197,9 +200,9 @@
         
                 <blockquote class="user-photo__item user-photo__inner">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/content/photo-fair-desktop@1x.jpg" width="300" height="400">
-                    <source media="(min-width: 660px)" srcset="img/content/photo-fair-tablet@1x.jpg" height="509">
-                    <img class="user-photo__image" src="img/content/photo-fair-mobile@1x.jpg" alt="Фото от пользователя Сергей" width="280" height="180">
+                    <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg" width="300" height="400">
+                    <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg" width="300" height="300">
+                    <img class="user-photo__image" src="img/photo-fair-mobile@1x.jpg" alt="Фото от пользователя Сергей" width="280" height="180">
                   </picture>
                   <div class="user-photo__item-wrapper">
                     <div class="photo__item-wrapper">
@@ -213,9 +216,9 @@
         
                 <blockquote class="user-photo__item user-photo__inner">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/content/photo-pov-desktop@1x.jpg" width="300" height="400">
-                    <source media="(min-width: 660px)" srcset="img/content/photo-pov-tablet@1x.jpg" height="509">
-                    <img class="user-photo__image" src="img/content/photo-pov-mobile@1x.jpg" alt="Фото от пользователя Максим" width="280" height="180">
+                    <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg" width="300" height="400">
+                    <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg" width="300" height="300">
+                    <img class="user-photo__image" src="img/photo-pov-mobile@1x.jpg" alt="Фото от пользователя Максим" width="280" height="180">
                   </picture>
                   <div class="user-photo__item-wrapper">
                     <div class="photo__item-wrapper">
@@ -229,9 +232,9 @@
         
                 <blockquote class="user-photo__item user-photo__inner">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/content/photo-wing-desktop@1x.jpg" width="300" height="400">
-                    <source media="(min-width: 660px)" srcset="img/content/photo-wing-tablet@1x.jpg" height="509">
-                    <img class="user-photo__image" src="img/content/photo-wing-mobile@1x.jpg" alt="Фото от пользователя Надежда" width="280" height="180">
+                    <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg" width="300" height="400">
+                    <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg" width="300" height="300">
+                    <img class="user-photo__image" src="img/photo-wing-mobile@1x.jpg" alt="Фото от пользователя Надежда" width="280" height="180">
                   </picture>
                   <div class="user-photo__item-wrapper">
                     <div class="photo__item-wrapper">
