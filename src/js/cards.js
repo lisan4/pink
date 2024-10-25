@@ -1,4 +1,6 @@
 function cards() {
+    const main = document.querySelector('main');
+    if (main.classList.contains("page-main")) {
     class MenuCard {
         constructor(img, par, info, parentSelector, ...classes) { //создаем конструктор карточек и передаем аргументы + рест оператор
             this.img = img;
@@ -45,6 +47,7 @@ function cards() {
     // }, 100);
 
     // if (body.offsetWidth > 660)
+}
 }
 
 export default cards;

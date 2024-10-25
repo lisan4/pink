@@ -1,0 +1,511 @@
+.form {
+    margin: 0 auto;
+}
+
+.form__header {
+    margin: 0 auto;
+    color: #283645;
+    line-height: 30px;
+    text-align: center;
+    width: 780px;
+    padding-bottom: 70px;
+    font-size: 18px;
+    padding-top: 50px;
+}
+
+.form__competition {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form__competition fieldset {
+    border: 2px solid #e5e5e5;
+}
+
+.form__name-info {
+    order: 0;
+    width: 434px;
+    margin: 0;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.background-greylight {
+    background-color: white;
+}
+
+.apps-order {
+    order: 0;
+}
+
+.form__apps {
+    width: 440px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+}
+
+.form__contacts {
+    margin: 0 auto;
+    width: 940px;
+    height: 162px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding-top: 34px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 0;
+    
+}
+
+.form__achievement {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 0;
+    padding-bottom: 15px;
+    width: 940px;
+    height: 230px;
+}
+
+.form__review {
+    margin: 0 auto;
+    padding: 50px;
+    order: 0;
+    margin-bottom: 70px;
+    width: 940px;
+    height: 215px;
+}
+
+.form__footer {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    margin: 0;
+    order: 0;
+}
+
+.form__label-name {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    text-transform: uppercase;
+    color: #d22856;
+    line-height: 30px;
+}
+
+.form__input-content {
+    font: inherit;
+    color: #283645;
+    height: 60px;
+    margin-bottom: 22px;
+    margin-top: 8px;
+    width: auto;
+    margin-left: 22px;
+    flex-grow: 1;
+    border: 2px solid;
+    border-color: #e5e5e5;
+}
+
+.form__input-content::placeholder {
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.form-check__legend {
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 0;
+
+}
+
+.form__legend-competition {
+    text-transform: uppercase;
+    color: #d22856;
+    line-height: 18px;
+    padding-left: 33px;
+    padding-right: 33px;
+}
+
+.form-apps__list {
+    padding-left: 130px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 40px;
+}
+
+.form-apps__item {
+    margin-bottom: 45px;
+}
+
+.form__checkbox {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
+    margin-left: -60px;
+}
+
+.form__checkbox--radio {
+    border-radius: 50%;
+}
+
+
+
+.form__input-chek {
+    display: none;
+}
+
+.form__label-name--contacts {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.form__label-name {
+    display: flex;
+    padding: 0;
+    text-transform: uppercase;
+    color: #d22856;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.form__input-content--contacts {
+    width: 377px;
+    margin-bottom: 15px;
+    order: -1;
+    font: inherit;
+    border: 2px solid;
+    border-color: #e5e5e5;
+    background-position: 319px 0;
+}
+
+.label__contacts {
+    padding-left: 40px;
+}
+
+.form__contacts--tel {
+    background-image: url(/img/telefon.png);
+    background-repeat: no-repeat;
+    background-size: 62px 62px;
+    background-position: 319px 0;
+}
+
+.form__contacts--mail {
+    background-image: url(/img/tt.png);
+    background-repeat: no-repeat;
+    background-position: 319px 0;
+    background-size: 62px 62px;
+}
+
+.form-achievement__list {
+    padding-left: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 40px;
+}
+
+.form-achievement__item {
+    width: 260px;
+    margin-bottom: 45px;
+}
+
+.form__input-chek:checked+.form__checkbox {
+    background-image: url(/img/galka.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form__input-chek:checked+.form__checkbox--radio {
+    background-image: url(/img/krug.png);
+}
+
+.form__competition textarea {
+    font: inherit;
+    border: 2px solid;
+    border-color: #e5e5e5;
+}
+
+.form-review__info {
+    padding: 0;
+    margin: 0;
+    color: #283645;
+    width: 100%;
+    height: 197px;
+    &::placeholder {
+        font-size: 18px;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+}
+
+.form__button {
+    display: block;
+    width: 300px;
+    margin: 0;
+    margin-bottom: 40px;
+    height: 59px;
+    color: #fff;
+    background-color: #2aab6d;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 30px;
+    cursor: pointer;
+    border: none;
+}
+
+.form-page__legend {
+    margin: 0;
+    width: 315px;
+    color: #283645;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: end;
+
+}
+
+.form-page__legend sup {
+    color: #d22856;
+}
+
+.form__legend-span {
+    display: inline-block;
+}
+
+.event-header {
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 50px;
+    line-height: 60px;
+    width: 940px;
+    padding-top: 64px;
+}
+
+.page-header__form {
+    min-height: 395px;
+}
+
+@media (max-width: $desktop-width) {
+    .form__header {
+        width: 500px;
+        font-size: 18px;
+        padding-top: 95px;
+        padding-bottom: 75px;
+    }
+
+    .form__competition {
+        width: 620px;
+    }
+
+    .form__name-info {
+        width: 620px;
+        height: 270px;
+        margin-bottom: 60px;
+    }
+    
+    .event-header {
+        width: 620px;
+        padding-top: 72px;
+        line-height: 60px;
+
+    }
+
+    .page-header__form {
+        min-height: 440px;
+    }
+
+    .apps-order {
+        width: 100%;
+    }
+
+    .form__apps {
+        width: 616px;
+    }
+
+    .form__contacts {
+        width: 620px;
+        height: auto;
+        display: block;
+    }
+
+    .form__input-content--contacts {
+        width: 100%;
+
+    }
+
+   
+    
+    .form__contacts--tel {
+        background-position: 434px 0;
+    }
+
+    .form__contacts--mail {
+        background-position: 434px 0;
+    }
+
+    .form__achievement {
+        width: 620px;
+        height: auto;
+    }
+
+    .form__legend-span {
+        display: none;
+    }
+
+    
+}
+
+@media (max-width: $tablet-width) {
+    .event-header {
+        width: 230px;
+        font-size: 24px;
+        padding: 0;
+        padding-top: 34px;
+        line-height: 32px;
+    }
+
+    .page-header__form {
+        min-height: 240px;
+    }
+
+    .form__header {
+        width: 300px;
+        line-height: 30px;
+        padding-top: 50px;
+        padding-bottom: 45px;
+        font-size: 14px;
+    }
+
+    .mobile-non {
+        display: none;
+    }
+
+    .form__competition {
+        width: auto;
+    }
+
+    .form__name-info {
+        width: 280px;
+        height: auto;
+        margin-bottom: 60px;
+        margin: 0 auto;
+    }
+
+    .form__label-name {
+        display: block;
+    }
+
+    .form__label-name span {
+        padding-left: 40px;
+    }
+
+    .form__input-content {
+        width: 100%;
+        height: 60px;
+        margin-bottom: 22px;
+        margin-top: 8px;
+        margin-left: 0;
+    }
+
+    .form-apps__list {
+        padding-left: 100px;
+    }
+
+    .form__apps {
+        width: 280px;
+    }
+
+    .form__contacts {
+        width: 276px;
+    }
+    
+    .form__legend-competition {
+        padding-top: 35px;
+    }
+
+    .form__competition fieldset {
+        border: none;
+    }
+
+    .form__name-info {
+        order: 1;
+    }
+
+    .apps-order {
+        order: 4;
+    }
+    
+    .form__contacts {
+        order: 3;
+    }
+
+    .achievement-order {
+        order: 2;
+        width: 100%;
+    }
+
+    .form__review {
+        order: 5;
+    }
+
+    .form__footer {
+        order: 6;
+    }
+
+    .background-greylight {
+        background-color: #f2f2f2;
+    }
+
+    .form__achievement {
+        width: 280px;
+        margin: 0 auto;
+    }
+    
+    .form__legend-competition--contacts {
+        display: none;
+    }
+
+    .form__apps {
+        width: 280px;
+    }
+
+    .form__review {
+        width: 280px;
+        height: 197px;
+    }
+
+
+    .form__footer {
+        display: block;
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    .form__button {
+        width: 280px;
+    }
+
+    .form-page__legend {
+        width: 280px;
+        text-align: center;
+    }
+}
