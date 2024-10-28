@@ -9,6 +9,7 @@
     width: 880px;
 }
 
+
 .user-photo__item-panorama {
     margin-bottom: 50px;
 }
@@ -278,6 +279,51 @@
         top: 0px;
         right: 100px;
     }
+
+    .photo-upload__form {
+        width: 620px;
+        margin: 0 auto;
+        height: 402px;
+        padding-top: 57px;
+        padding-bottom: 54px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .photo-upload-wrapper {
+        width: 276px;
+    }
+
+    #edit__range {
+        width: 202px;
+    }
+
+    .edit__ikon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .edit__ikon--active {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .edit__item-wrapper--top {
+        margin-top: 9px;
+    }
+
+    .edit__item-wrapper {
+        padding-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .upload__button-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 34px;
+    }
 }
 
 @media (max-width: $tablet-width){
@@ -323,5 +369,88 @@
 
     }
 
+    .photo-upload__form {
+        display: block;
+    }
 
+    .photo-upload__form {
+        width: 320px;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .edit__mobile-only {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 45px;
+    }
+
+    .edit__item-wrapper {
+        display: block;
+    }
+    .edit__item-wrapper--hidden {
+        display: none;
+    }
+
+    .edit__mobile-hidden {
+        display: none;
+    }
+
+    .edit__ikon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .edit__ikon--active {
+        width: 44px;
+        height: 44px;
+    }
+    
+
+    .photo-upload__image {
+        width: 100%;
+    }
+
+    .photo-upload-wrapper {
+        width: 320px;
+    }
+
+    .background-greylight {
+        height: 840px;
+    }
+
+    .edit__item-wrapper {
+        border-bottom: 1px solid #dddfe0;
+        padding-bottom: 39px;
+        margin-top: 30px;
+        padding-left: 37px;
+    }
+
+    #edit__range {
+        margin: 0 auto;
+        width: 240px;
+    }
+
+    .photo-upload__button {
+        width: 285px;
+    }
+
+    .upload__button-wrapper {
+        padding-left: 16px;
+        margin-top: 43px;
+    }
+
+    .photo-upload__button--disable  {
+        width: 285px;
+        
+    }
+
+    .upload__button-wrapper {
+        gap: 10px;
+     
+    }
 }

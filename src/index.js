@@ -4,12 +4,12 @@ import nav from './js/navig';
 import cards from './js/cards';
 import slider from './js/slider';
 import modal from './js/modal';
-
-
+import like from './js/like';
 
 window.addEventListener('DOMContentLoaded', () => {
     nav();
     cards();
+    like();
     modal();
     slider({
         container: ".offer__slider",
